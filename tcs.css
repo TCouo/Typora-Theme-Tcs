@@ -1,0 +1,14 @@
+
+@import url(./tcs/tcs-d.css);
+/* @import url(./drake/font.css); */
+/* @include-when-export url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
+
+/*by 16soundsofsilence, yes this code is an absolute mess*/
+
+:root{
+    --tc: 0;
+    /* --primary-color: #ac1f15; */
+}
+
+
+

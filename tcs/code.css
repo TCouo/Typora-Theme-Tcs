@@ -1,0 +1,239 @@
+.CodeMirror {
+    padding: 1rem;
+    font-family: var(--code-font-family) !important;
+    padding-top: 0px;
+}
+
+
+#write .md-fences::before {
+    content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDU0IDE0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+CiAgICAgICAgPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNGRjVGNTYiIHN0cm9rZT0iI0UwNDQzRSIgc3Ryb2tlLXdpZHRoPSIuNSI+PC9jaXJjbGU+CiAgICAgICAgPGNpcmNsZSBjeD0iMjYiIGN5PSI2IiByPSI2IiBmaWxsPSIjRkZCRDJFIiBzdHJva2U9IiNERUExMjMiIHN0cm9rZS13aWR0aD0iLjUiPjwvY2lyY2xlPgogICAgICAgIDxjaXJjbGUgY3g9IjQ2IiBjeT0iNiIgcj0iNiIgZmlsbD0iIzI3QzkzRiIgc3Ryb2tlPSIjMUFBQjI5IiBzdHJva2Utd2lkdGg9Ii41Ij48L2NpcmNsZT4KICAgIDwvZz4KPC9zdmc+');
+    position: absolute;
+
+    top: 10px;
+    left: 15px;
+
+    z-index: 4;
+}
+
+#write .md-fences.md-diagram:not(.md-focus)::before{
+    content: none;
+}
+
+#write pre .CodeMirror-wrap{
+
+    padding-top: 20px;
+}
+
+
+
+/* MAC的三个图标 */
+/* .CodeMirror-wrap .CodeMirror-scroll {
+    padding-top: 20px;
+} */
+
+/* 红色圆形 */
+/* #write .md-fences:before {
+    content: "";
+    z-index: 4;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    float: left;
+    background-color: var(--code-icon-red);
+} */
+/* 橙色圆形 */
+/* #write pre .CodeMirror-scroll:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    float: left;
+    z-index: 999;
+    background-color: var(--code-icon-yellow);
+} */
+/* 绿色圆形 */
+/* #write .md-fences::after {
+    content: "";
+    z-index: 4;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    float: left;
+    background-color: var(--code-icon-green);
+}  */
+
+.cm-s-inner .CodeMirror-gutters {
+    background-color: none;
+    border-right: none;
+    border-radius: 0px;
+    color: white;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+    border-left: solid 2px var(--light-text-color-darker);
+}
+
+.CodeMirror.cm-s-typora-default .CodeMirror-activeline-background {
+    background-color: var(--codeboxes-lighter);
+}
+/* 代码块光标线条宽度、颜色 #write .CodeMirror-cursors .CodeMirror-cursor  */
+.cm-s-inner .CodeMirror-cursor {
+    color: white;
+    border-left: solid 1px white;
+}
+
+/* 代码块行号样式 */
+.CodeMirror-linenumber {
+    color: var(--bg-color);
+    opacity: 0.6;
+}
+
+.cm-s-inner .CodeMirror-line::selection,
+.cm-s-inner .CodeMirror-line::-moz-selection,
+.cm-s-inner .CodeMirror-line > span::selection,
+.cm-s-inner .CodeMirror-line > span::-moz-selection,
+.cm-s-inner .CodeMirror-line > span > span::selection,
+.cm-s-inner .CodeMirror-line > span > span::-moz-selection {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cm-error {
+    color: var(--danger-color);
+}
+/* 代码关键字配色 */
+.cm-s-inner span.cm-comment,
+.cm-s-typora-default span.cm-comment,
+.cm-s-typora-default span.cm-code {
+    color: #9daab6;
+}
+
+.cm-s-inner span.cm-string,
+.cm-s-inner span.cm-string-2 {
+    color: #71a7ff;
+}
+
+.cm-s-inner span.cm-number {
+    color: #ff9d3d;
+}
+
+.cm-s-inner span.cm-variable,
+.cm-s-inner span.cm-variable-2 {
+    color: white;
+}
+
+.cm-s-inner span.cm-def {
+    color: white;
+}
+
+.cm-s-inner span.cm-operator {
+    color: #ff9d3d;
+}
+
+.cm-s-inner span.cm-keyword {
+    color: #61e3a5;
+}
+
+.cm-s-inner span.cm-atom {
+    color: #bd93f9;
+}
+
+.cm-s-inner span.cm-meta {
+    color: #f8f8f2;
+}
+
+.cm-s-inner span.cm-link,
+.cm-s-typora-default .cm-link {
+    color: var(--primary-color);
+}
+
+.cm-s-inner span.cm-tag,
+.cm-s-inner .cm-header {
+    color: #b4f6d6;
+}
+
+.cm-s-inner span.cm-attribute {
+    color: #ff9d3d;
+}
+
+.cm-s-inner span.cm-qualifier,
+.cm-s-inner span.cm-type,
+.cm-s-inner span.cm-variable-3 {
+    color: #82ee9d;
+}
+
+.cm-s-inner span.cm-property {
+    color: #ffd6ad;
+}
+
+.cm-s-inner span.cm-builtin {
+    color: #8ffaaa;
+}
+
+/* 代码关键字配色 */
+.md-fences.md-focus .cm-s-inner .CodeMirror-activeline-background {
+    background: none;
+}
+
+.cm-s-inner .CodeMirror-selected,
+.cm-s-inner .CodeMirror-selectedtext {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-inner .cm-search-hit.CodeMirror-selected, .cm-s-inner .cm-search-hit.CodeMirror-selectedtext {
+    background: var(--select-text-bg-color)!important;
+} /* removes black background from code search selected */
+
+.cm-s-typora-default .cm-header,
+.cm-s-typora-default .cm-property {
+    color: white;
+    font-weight: 400;
+}
+
+/* 语言选择框样式 */
+.md-fences .code-tooltip {
+    box-shadow: rgba(116, 129, 141, 0.08) 0px 2px 6px 0px;
+    border: solid 1px var(--borders);
+    border-radius: 0.3rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    width: 15rem;
+    height: 2.5rem;
+    bottom: -3rem;
+    padding: 0.1875rem;
+}
+
+.md-fences .code-tooltip .ty-input {
+    border: solid 1px var(--borders);
+    height: 2rem;
+    line-height: 2rem;
+    margin: 0rem;
+    padding-left: 0.5rem !important;
+    text-align: left;
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: var(--font-family);
+    transition-duration: 0.3s;
+    transition-property: border;
+}
+/* 选择框获取焦点样式 */
+.md-fences .code-tooltip .ty-input:focus {
+    border-color: var(--primary-color);
+}
+
+

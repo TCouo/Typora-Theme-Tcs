@@ -1,0 +1,10 @@
+/*NOTIFICATION*/
+
+#md-notification {
+    border-bottom: solid 1px var(--borders);
+    box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+}
+
+#md-notifcation .btn {
+    border: 0;
+}

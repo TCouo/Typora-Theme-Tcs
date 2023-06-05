@@ -1,0 +1,40 @@
+#write > ul:first-child,
+#write > ol:first-child {
+    margin-top: 30px;
+}
+
+
+
+
+p,
+blockquote,
+ul,
+ol,
+dl {
+    margin: 0.5rem 0rem 1.5rem 0rem;
+}
+
+li > ol,
+li > ul {
+    margin: 0 0;
+}
+
+
+li p.first {
+    display: inline-block;
+}
+
+ul,
+ol {
+    padding-left: 30px;
+}
+
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
